@@ -53,7 +53,7 @@ export function Analytics() {
                     ))}
                   </Pie>
                   <Tooltip 
-                    formatter={(value: number) => [`${value.toLocaleString()} DZD`, '']}
+                    formatter={(value: any) => [`${Number(value).toLocaleString()} DZD`, '']}
                     contentStyle={{ backgroundColor: '#0f172a', borderColor: '#1e293b', borderRadius: '8px' }}
                     itemStyle={{ color: '#f8fafc' }}
                   />
